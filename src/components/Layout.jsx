@@ -4,20 +4,14 @@ import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen">
-      {/* <div className="flex">
-        {showSidebar && <Sidebar />}
-        <div className="flex-1 flex flex-col">
-          <Navbar />
-          <main className="flex-1 overflow-y-auto">{children}</main>
+    <div className="min-h-screen bg-neutral-50 flex flex-col">
+      <Navbar />
+      <main className="flex-1 overflow-y-auto">
+        <div className="animate-fade-in">
+          {children}
         </div>
-        
-      </div> */}
-       <div className="flex-1 flex flex-col">
-          <Navbar />
-          <main className="flex-1 overflow-y-auto">{children}</main>
-          <Footer/>
-        </div>
+      </main>
+      <Footer />
     </div>
   );
 };
