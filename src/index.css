@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes text-glow {
+    0%, 100% {
+      text-shadow: 0 0 4px #facc15, 0 0 8px #fbbf24, 0 0 12px #f59e0b;
+    }
+    50% {
+      text-shadow: 0 0 8px #facc15, 0 0 16px #fbbf24, 0 0 24px #f59e0b;
+    }
+  }
+  
+  
